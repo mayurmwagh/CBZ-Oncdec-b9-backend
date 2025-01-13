@@ -8,14 +8,14 @@ spec:
   selector:
     matchLabels:
       app: b9-backend-app
-    replicas: 2 
-    template:
-      metadata:
-        labels:
-          app: b9-backend-app
-      spec:
-        containers:
-          - name: b9-backend-app
-            image: mayurwagh/oncdec9pls-backend:latest
-            ports:
-              - containerPort: 8080 
+  replicas: 2 
+  template:
+    metadata:
+      labels:
+        app: b9-backend-app
+    spec:
+      containers:
+        - name: b9-backend-app
+          image: mayurwagh/oncdec9pls-backend:latest
+          ports:
+            - containerPort: 8080 
