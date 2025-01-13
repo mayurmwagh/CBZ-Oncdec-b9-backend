@@ -1,0 +1,21 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: b9-backend-app
+  labels:
+    app: b9-backend-app
+spec:
+  selector:
+    matchLabels:
+      app: b9-backend-app
+    replicas: 2 
+    template:
+      metadata:
+        labels:
+          app: b9-backend-app
+      spec:
+        containers:
+          - name: b9-backend-app
+            image: mayurwagh/oncdec9pls-backend:latest
+            ports:
+              - containerPort: 8080 
