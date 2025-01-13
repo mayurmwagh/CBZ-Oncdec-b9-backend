@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('pull'){
             steps {
-                git branch: 'main', url: 'https://github.com/mayurmwagh/cbz-backend.git'
+                git branch: 'main', url: 'https://github.com/mayurmwagh/CBZ-Oncdec-b9-backend'
             }
         }
         stage('build'){
